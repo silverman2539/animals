@@ -1,0 +1,141 @@
+<html>
+	<head>
+		<title>What kind of animal are you?</title>
+        <link rel="shortcut icon" href="frog.ico">
+		<style>
+			body
+			{
+				background-color: lavenderblush;
+				text-align: center;
+				padding: 25;
+				border-style: solid;
+				border-color: mediumvioletred;
+			}
+			button
+			{
+				background: linear-gradient(to bottom right, white 0%, plum 100%);
+				height: 500;
+				width: 500;
+				border-style: solid;
+				border-color: mediumvioletred;
+				font-size: 75;
+				color: mediumvioletred;
+			}
+			button:hover
+			{
+				opacity: 50%;
+				transition: .5s;
+			}
+			img
+			{
+				border-style: solid;
+				border-color: mediumvioletred;
+			}
+			p
+			{
+				font-size: 25;
+				color: mediumvioletred;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<button onclick="Choose()" id="button">Click to find out what kind of animal you are!</button>
+        <img id="animal1" src="animal1.jpg" height="500" width="500" style="display:none;">
+        <img id="animal2" src="animal2.jpg" height="500" width="500" style="display:none;">
+        <img id="animal3" src="animal3.jpg" height="500" width="500" style="display:none;">
+        <img id="animal4" src="animal4.jpg" height="500" width="500" style="display:none;">
+        <img id="animal5" src="animal5.jpg" height="500" width="500" style="display:none;">
+        <img id="animal6" src="animal6.jpg" height="500" width="500" style="display:none;">
+        <img id="animal7" src="animal7.jpg" height="500" width="500" style="display:none;">
+        <img id="animal8" src="animal8.jpg" height="500" width="500" style="display:none;">
+        <img id="animal9" src="animal9.jpg" height="500" width="500" style="display:none;">
+        <img id="animal10" src="animal10.jpg" height="500" width="500" style="display:none;">
+        <img id="animal11" src="animal11.jpg" height="500" width="500" style="display:none;">
+        <img id="animal12" src="animal12.jpg" height="500" width="500" style="display:none;">
+        <img id="animal13" src="animal13.jpg" height="500" width="500" style="display:none;">
+        <img id="animal14" src="animal14.jpg" height="500" width="500" style="display:none;">
+        <img id="animal15" src="animal15.jpg" height="500" width="500" style="display:none;">
+        <img id="animal16" src="animal16.jpg" height="500" width="500" style="display:none;">
+        <img id="animal17" src="animal17.jpg" height="500" width="500" style="display:none;">
+        <img id="animal18" src="animal18.jpg" height="500" width="500" style="display:none;">
+        <img id="animal19" src="animal19.jpg" height="500" width="500" style="display:none;">
+        <img id="animal20" src="animal20.jpg" height="500" width="500" style="display:none;">
+		<div id="pictures" style="display:none;">
+			<p>Possible Animals:</p>
+        	<img src="animal1.jpg" height="100" width="100">
+        	<img src="animal2.jpg" height="100" width="100">
+        	<img src="animal3.jpg" height="100" width="100">
+        	<img src="animal4.jpg" height="100" width="100">
+        	<img src="animal5.jpg" height="100" width="100">
+        	<img src="animal6.jpg" height="100" width="100">
+        	<img src="animal7.jpg" height="100" width="100">
+        	<img src="animal8.jpg" height="100" width="100">
+        	<img src="animal9.jpg" height="100" width="100">
+        	<img src="animal10.jpg" height="100" width="100">
+			<br>
+        	<img src="animal11.jpg" height="100" width="100">
+        	<img src="animal12.jpg" height="100" width="100">
+        	<img src="animal13.jpg" height="100" width="100">
+        	<img src="animal14.jpg" height="100" width="100">
+        	<img src="animal15.jpg" height="100" width="100">
+       		<img src="animal16.jpg" height="100" width="100">
+        	<img src="animal17.jpg" height="100" width="100">
+        	<img src="animal18.jpg" height="100" width="100">
+        	<img src="animal19.jpg" height="100" width="100">
+        	<img src="animal20.jpg" height="100" width="100">
+		</div>
+		
+		<script>
+			var random;
+			function Choose()
+			{
+				document.getElementById("button").style.display = "none";
+				document.getElementById("pictures").style.display = "";
+				random = Math.floor(Math.random() * 6);
+				if (random == 0)
+					document.getElementById("animal1").style.display = "";
+				else if (random == 1)
+					document.getElementById("animal2").style.display = "";
+				else if (random == 2)
+					document.getElementById("animal3").style.display = "";
+				else if (random == 3)
+					document.getElementById("animal4").style.display = "";
+				else if (random == 4)
+					document.getElementById("animal5").style.display = "";
+				else if (random == 5)
+					document.getElementById("animal6").style.display = "";
+				else if (random == 6)
+					document.getElementById("animal7").style.display = "";
+				else if (random == 7)
+					document.getElementById("animal8").style.display = "";
+				else if (random == 8)
+					document.getElementById("animal9").style.display = "";
+				else if (random == 9)
+					document.getElementById("animal10").style.display = "";
+				else if (random == 10)
+					document.getElementById("animal11").style.display = "";
+				else if (random == 11)
+					document.getElementById("animal12").style.display = "";
+				else if (random == 12)
+					document.getElementById("animal13").style.display = "";
+				else if (random == 13)
+					document.getElementById("animal14").style.display = "";
+				else if (random == 14)
+					document.getElementById("animal15").style.display = "";
+				else if (random == 15)
+					document.getElementById("animal16").style.display = "";
+				else if (random == 16)
+					document.getElementById("animal17").style.display = "";
+				else if (random == 17)
+					document.getElementById("animal18").style.display = "";
+				else if (random == 18)
+					document.getElementById("animal19").style.display = "";
+				else if (random == 19)
+					document.getElementById("animal20").style.display = "";
+				else
+					alert("error");
+			}
+		</script>
+	</body>
+</html>
